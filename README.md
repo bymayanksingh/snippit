@@ -14,10 +14,10 @@ To run Snippit, navigate to the project's root directory in the terminal and run
 
 ## Screenshots
 
-![Upload Page](http://full/path/to/img.jpg "Upload Page")
-![Blobs Page](http://full/path/to/img.jpg "Blobs Page")
-![404 Page](http://full/path/to/img.jpg "404 Page")
-![400 Page](http://full/path/to/img.jpg "400 Page")
+![Upload Page](https://github.com/bymayanksingh/snippit/blob/e9d518fc6fa59262ac31bf14ead5db0f8d46c8e8/screenshots/Screenshot%202023-06-24%20at%203.55.35%20PM.png)
+![Blobs Page](https://github.com/bymayanksingh/snippit/blob/e9d518fc6fa59262ac31bf14ead5db0f8d46c8e8/screenshots/Screenshot%202023-06-24%20at%203.57.06%20PM.png)
+![404 Page](https://github.com/bymayanksingh/snippit/blob/e9d518fc6fa59262ac31bf14ead5db0f8d46c8e8/screenshots/Screenshot%202023-06-24%20at%203.57.16%20PM.png)
+![400 Page](https://github.com/bymayanksingh/snippit/blob/e9d518fc6fa59262ac31bf14ead5db0f8d46c8e8/screenshots/Screenshot%202023-06-24%20at%203.57.33%20PM.png)
 
 ## Contributing
 
