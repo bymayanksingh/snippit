@@ -1,6 +1,6 @@
 # Snippit
 
-Snippit is a super simple Flask based web application that splits a large text file into blobs of X (number of words) each, where value of X is decided by the user, minimum number of words is 100, for every blob there exists a copy button to copy blob text.
+Snippit is a super simple Flask based web application that splits a large text file into blobs of X (number of words) each, where value of X is decided by the user, minimum number of words is 100 in a blob, for every blob there exists a copy button to copy the text.
 
 ## Installation
 
