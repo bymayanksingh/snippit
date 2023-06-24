@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                background-color: #f5f5f5;
+            }
+            .container {
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            h2 {
+                color: #007BFF;
+            }
+            .blob {
+                background: #fff;
+                padding: 20px;
+                border-radius: 8px;
+                box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+                line-height: 1.6;
+            }
+            .blob button {
+                margin-top: 10px;
+                padding: 10px;
+                background-color: #007BFF;
+                color: white;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+                transition: transform 0.3s ease;
+            }
+            .blob button:active {
+                transform: scale(0.9);
+            }
+            .blob button:hover {
+                background-color: #0056b3;
+            }
+            hr {
+                border: none;
+                height: 1px;
+                background: #ddd;
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1>Snippit ✒️</h1>
+            {% for blob in blobs %}
+            <h2>Blob {{loop.index}}</h2>
+            <div class="blob">
+                <p id="blobText{{loop.index}}"><b>Summarize the following in bullet points:</b> <br> {{blob}}</p>
+                <button id="copyButton{{loop.index}}" onclick="copyToClipboard('blobText{{loop.index}}', 'copyButton{{loop.index}}')">Copy!</button>
+            </div>
+            <hr>
+            {% endfor %}
+        </div>
+
+        <script>
+            function copyToClipboard(elementId, buttonId) {
+                var copyText = document.getElementById(elementId);
+                var textArea = document.createElement("textarea");
+                textArea.value = copyText.textContent;
+                document.body.appendChild(textArea);
+                textArea.select();
+                document.execCommand("copy");
+                textArea.remove();
+
+                var button = document.getElementById(buttonId);
+                button.textContent = "Copied!";
+                setTimeout(function(){
+                    button.textContent = "Copy!";
+                }, 2000);
+            }
+        </script>
+    </body>
+</html>
