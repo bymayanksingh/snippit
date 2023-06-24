@@ -10,7 +10,7 @@ Snippit is a super simple Flask based web application that splits a large text f
 
 ## Usage
 
-To run TextBlobber, navigate to the project's root directory in the terminal and run `python3 app.py`. Then, open your web browser and go to `http://127.0.0.1:5000/`.
+To run Snippit, navigate to the project's root directory in the terminal and run `python3 app.py`. Then, open your web browser and go to `http://127.0.0.1:5000/`.
 
 ## Contributing
 
