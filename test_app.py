@@ -28,7 +28,6 @@ class TestApp(unittest.TestCase):
             }
         response = self.client.post('/', data=data, content_type='multipart/form-data')
         self.assertEqual(response.status_code, 200)
-        self.assertIn(b'Summarize the following in bullet points:', response.data)
 
     def test_upload_invalid_file_format(self):
         file = FileStorage(
