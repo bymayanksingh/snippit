@@ -60,7 +60,7 @@
             {% for blob in blobs %}
             <h2>Blob {{loop.index}}</h2>
             <div class="blob">
-                <p id="blobText{{loop.index}}"><b>Summarize the following in bullet points:</b> <br> {{blob}}</p>
+                <p id="blobText{{loop.index}}">{{blob}}</p>
                 <button id="copyButton{{loop.index}}" onclick="copyToClipboard('blobText{{loop.index}}', 'copyButton{{loop.index}}')">Copy!</button>
             </div>
             <hr>
