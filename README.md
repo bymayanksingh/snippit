@@ -12,6 +12,10 @@ Snippit is a super simple Flask based web application that splits a large text f
 
 To run Snippit, navigate to the project's root directory in the terminal and run `python3 app.py`. Then, open your web browser and go to `http://127.0.0.1:5000/`.
 
+## Screenshots
+
+
+
 ## Contributing
 
 Contributions are welcome! Please feel free to submit a pull request.
