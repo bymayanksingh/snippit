@@ -34,9 +34,10 @@ def index():
 def upload_file():
     """Handles file upload and generates text blobs."""
     file = request.files['file']
+    word_limit = int(request.form['word_limit'])
     if file and file.filename.endswith('.txt'):
         text = file.read().decode('utf-8')
-        blobs = generate_blobs(text)
+        blobs = generate_blobs(text, word_limit=word_limit)
         return render_template('blobs.html', blobs=blobs)
     else:
         error_message = 'Invalid File Format, Please upload a text file'
