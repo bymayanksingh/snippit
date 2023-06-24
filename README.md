@@ -20,7 +20,7 @@ To run Snippit, navigate to the project's root directory in the terminal and run
 #### Blobs Page
 ![Blobs Page](https://github.com/bymayanksingh/snippit/blob/e9d518fc6fa59262ac31bf14ead5db0f8d46c8e8/screenshots/Screenshot%202023-06-24%20at%203.57.06%20PM.png)
 
-### Copy Button
+#### Copy Button
 ![Copy Button Page](https://github.com/bymayanksingh/snippit/blob/9fcc18c9f4266b1eeab5025a4ea7526aac82f9b3/screenshots/Screenshot%202023-06-24%20at%204.18.31%20PM.png)
 
 #### 400 Page
