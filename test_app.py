@@ -22,7 +22,10 @@ class TestApp(unittest.TestCase):
         self.assertEqual(response.status_code, 500)
 
     def test_upload_file_route(self):
-        data = {'file': (open('test_file.txt', 'rb'), 'test_file.txt')}
+        data = {
+            'file': (open('test_file.txt', 'rb'), 'test_file.txt'),
+            'word_limit': 500
+            }
         response = self.client.post('/', data=data, content_type='multipart/form-data')
         self.assertEqual(response.status_code, 200)
         self.assertIn(b'Summarize the following in bullet points:', response.data)
@@ -33,7 +36,8 @@ class TestApp(unittest.TestCase):
             filename='test_file_invalid.png',
             content_type='image/jpeg'
         )
-        response = self.client.post('/', data={'file': file}, content_type='multipart/form-data')
+        word_limit = 500
+        response = self.client.post('/', data={'file': file, 'word_limit': word_limit}, content_type='multipart/form-data')
         self.assertEqual(response.status_code, 400)
         self.assertIn(b'<p>Invalid File Format, Please upload a text file</p>', response.data)
 
