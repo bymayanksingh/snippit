@@ -14,7 +14,10 @@ To run Snippit, navigate to the project's root directory in the terminal and run
 
 ## Screenshots
 
-
+![Upload Page](http://full/path/to/img.jpg "Upload Page")
+![Blobs Page](http://full/path/to/img.jpg "Blobs Page")
+![404 Page](http://full/path/to/img.jpg "404 Page")
+![400 Page](http://full/path/to/img.jpg "400 Page")
 
 ## Contributing
 
